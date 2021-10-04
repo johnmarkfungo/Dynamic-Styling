@@ -1,0 +1,146 @@
+*{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body{
+  background: #0b0c10;
+}
+header h1 {
+  width: 45%;
+  background: #1f2833;
+  margin: auto;
+  margin-top: 25px;
+  padding: 15px;
+  text-align: center;
+  color: #66FCF1;
+  box-shadow: 0px 0 5px #757677;
+  border-radius: 10px;
+  font-size: 35px;
+}
+#container {
+  width: 45%;
+  background: #1f2833;
+  margin: auto;
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 8px #757677;
+  color: #66FCF1;
+  text-align: center;
+  font-size: 30px;
+}
+button {
+  width: 50%;
+  background: transparent;
+  padding: 10px;
+  border-color: #66FCF1;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+
+button:hover {
+  background: #66FCF1;
+  color: #0b0c10;
+  border-color: #fff;
+}
+.in2 {
+  text-align: center;
+  width: 80%;
+  padding: 5px;
+  background: #1f2833;
+  margin-top: 15px;
+  border-color: #66FCF1;
+  border-radius: 7px;
+  color: #66FCF1;
+  transition: 0.5s;
+}
+
+.in2:focus {
+  background-color: #66fcf252;
+  color: #0b0c10;
+  border-color: #0b0c10;
+}
+.in{
+  text-align: center;
+  width: 70%;
+  padding: 5px;
+  background: #1f2833;
+  margin-top: 15px;
+  border-color: #66FCF1;
+  border-radius: 7px;
+  color: #66FCF1;
+  transition: 0.5s;
+}
+
+.in:focus {
+  background-color: #66fcf252;
+  color: #0b0c10;
+  border-color: #0b0c10;
+}
+p{/*This is the default style of the two paragraphs 'style me' and 'style me inline'*/
+  background: #45a29e;
+  margin-top: 10px;
+  border-radius: 15px;
+  color: #0b0c10;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 7px;
+}
+.user1{/*This is the css of the style me paragraph -- this field is when the input 1 has a value of user1 - this will gonna be binded css in the style me paragraph*/
+  background: #0400fd;
+  margin-top: 10px;
+  border-radius: 15px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 7px;
+}
+.user2{/*This is the css of the style me paragraph -- this field is when the input 1 has a value of user2 - this will gonna be binded css in the style me paragraph*/
+  background: #1ec001;
+  margin-top: 10px;
+  border-radius: 15px;
+  color: #0b0c10;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 7px;
+}
+.visible{/*This is the css of the div that are going to be toggled, this field is for visible or show toggle*/
+  display: block;
+}
+.hide{/*This is the css of the div that are going to be toggled, this field is for hide toggle*/
+  display: none;
+}
+.legend{
+  font-size: 10px;
+  color: gray;
+}
+
+@media (max-width: 700px) {
+  #container {
+      width: 70%;
+      padding: 20px;
+  }
+
+  header h1 {
+      width: 70%;
+      font-size: 30px;
+      padding: 10px;
+  }
+  button{
+      padding: 5px;
+  }
+  input {
+      width: 45%;
+  }
+
+  p {
+      font-size: 15px;
+      font-weight: 600;
+      padding: 5px;
+  }
+}

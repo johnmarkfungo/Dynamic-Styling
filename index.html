@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <header><h1>
+    Vue Styling
+</h1></header>
+<section id="container">
+  <!--  This is the input 1 field, here the function inputOne() is accessed which means that this input here will going to read and will see it to the function of inputOne   -->
+   <input placeholder="Enter 'user1/user2' " class="in" type="text" @input="inputOne">
+  
+   <div :class="[button ? 'visible' : 'hide']">
+     <!--   Her is the paragraph of style me, we have a v-bind:class here to bind the value of user data property which is coming from the input 1 field so it will gonna be 'user1' or 'user2' or no value to be binded depends on the condition in the function inputOne()  -->
+  <p :class="user">
+   Style Me!
+  </p>
+   </div>
+   
+
+   <button @click="toggleEvent">Toggle</button>
+
+   <input type="text" class="in2" placeholder="Enter a color" @input="pickColors"><br>
+
+   <span class="legend">Available Colors(Yellow/ Red/ Blue)</span>
+   
+   <p :style="{'background-color': selectedColor}">
+       Style me Inline!
+   </p>
+   
+</section>
+
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
